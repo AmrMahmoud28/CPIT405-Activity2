@@ -1,11 +1,14 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
     background-color: #202124;
     color: white;
     overflow: overlay;
+    padding-top: 90px;
+    margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -32,8 +35,10 @@ a:hover {
 }
 
 nav {
-    /* position: fixed;
-    width: 100%; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
     display: flex;
     justify-content: space-around;
     background-color: #202124;
@@ -266,7 +271,7 @@ td {
 
 #signup {
     max-width: 25vw;
-    margin-top: 50px;
+    margin-top: 55px;
     padding: 7px 30px 30px 30px;
     border: 1px solid #10e9e9;
 }
