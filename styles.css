@@ -266,6 +266,7 @@ td {
 
 #signup {
     max-width: 25vw;
+    margin-top: 50px;
     padding: 7px 30px 30px 30px;
     border: 1px solid #10e9e9;
 }
@@ -284,3 +285,50 @@ td {
 }
 
 /* ======================================================================= */
+
+footer{
+    margin-top: 50px;
+    height: 25vh;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    color: #cccccc;
+    font-size: 1.2rem;
+}
+
+footer #link{
+    font-size: 1.5rem;
+}
+
+a[target="_blank"] {
+    position: relative;
+}
+
+a[target="_blank"]:after {
+    position: absolute;
+    top: 3px;
+    right: -15px;
+    content: "\1f855";
+    font-size: 13px;
+    color: white;
+    line-height: 3px;
+    height: 5px;
+    width: 5px;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+a[target="_blank"]:before {
+    position: absolute;
+    top: 4px;
+    right: -15px;
+    content: " ";
+    border: 1px solid white;
+    width: 8px;
+    height: 8px;
+}
