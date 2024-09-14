@@ -1,11 +1,21 @@
-body{
+body {
     background-color: #202124;
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #10e9e9;
+    transition: 0.2s ease;
+}
+
 nav {
-    position: fixed;
-    width: 100%;
+    /* position: fixed;
+    width: 100%; */
     display: flex;
     justify-content: space-around;
     background-color: #202124;
@@ -32,16 +42,9 @@ nav ul li {
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
     font-size: 1.4rem;
     font-weight: 800;
     margin-left: 33px;
-}
-
-nav ul a:hover {
-    color: #10e9e9;
-    transition: 0.2s ease;
 }
 
 #signupNav {
@@ -55,3 +58,123 @@ nav ul a:hover {
     color: white;
     transition: 0.4s ease;
 }
+
+/* ======================================================================= */
+
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainHeader form {
+    max-width: 50vw;
+    margin: 2rem auto;
+    padding: 0px 30px 30px 30px;
+    border-radius: 10px;
+    background-color: #303134;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mainHeader form h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#createEventForm {
+    border: 3px solid #10e9e9;
+}
+
+#createEventForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+#createEventForm input[type="text"],
+#createEventForm input[type="date"],
+#createEventForm input[type="time"],
+#createEventForm textarea {
+    width: 40vw;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    font-size: 1.3rem;
+    resize: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.6;
+    filter: invert(0.8);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1
+}
+
+#createEventForm input[type="text"]:hover,
+#createEventForm input[type="date"]:hover,
+#createEventForm input[type="time"]:hover,
+#createEventForm textarea:hover {
+    border: 2px solid #10e9e9;
+    transition: 0.2s ease;
+}
+
+#createEventForm input[type="text"]:focus,
+#createEventForm input[type="date"]:focus,
+#createEventForm input[type="time"]:focus,
+#createEventForm textarea:focus {
+    border: 2px solid #10e9e9;
+    outline: none;
+}
+
+#createEventForm input[type="submit"] {
+    display: block;
+    float: right;
+    background-color: #10e9e9;
+    color: white;
+    border: none;
+    padding: 8px 28px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: 0.2s ease;
+}
+
+#createEventForm input[type="submit"]:hover {
+    background-color: #00ffff;
+    transition: 0.2s ease;
+}
+
+#createEventForm select {
+    width: 50%;
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #303134;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+#createEventForm select:hover {
+    border-color: #10e9e9;
+}
+
+/* Focus effect */
+#createEventForm select:focus {
+    border-color: #1cc2c2;
+    outline: none;
+}
+
+/* ======================================================================= */
+
+#availabilityForm {}
