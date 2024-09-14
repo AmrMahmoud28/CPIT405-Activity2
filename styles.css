@@ -1,17 +1,25 @@
+body{
+    background-color: #202124;
+    color: white;
+}
+
 nav {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: #F2F2F2;
+    background-color: #202124;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav h1 {
-    color: #1cc2c2;
+    color: #10e9e9;
     font-size: 2.2rem;
 }
 
 nav h1:hover {
-    color: #25aaaa;
+    color: #00ffff;
     transition: 0.2s ease;
 }
 
@@ -25,25 +33,25 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.4rem;
     font-weight: 800;
     margin-left: 33px;
 }
 
 nav ul a:hover {
-    color: #1cc2c2;
+    color: #10e9e9;
     transition: 0.2s ease;
 }
 
 #signupNav {
-    border: 3px solid #1cc2c2;
+    border: 3px solid #10e9e9;
     border-radius: 24px;
     padding: 5px 28px;
 }
 
 #signupNav:hover {
-    background-color: #1cc2c2;
+    background-color: #10e9e9;
     color: white;
     transition: 0.4s ease;
 }
